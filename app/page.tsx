@@ -6,6 +6,7 @@ import { RoomCard } from "@/components/room-card"
 import { RoomFilters } from "@/components/room-filters"
 import { LocationSection } from "@/components/location-section"
 import { ScrollToTop } from "@/components/scroll-to-top"
+import { RoomsConstructionOverlay } from "@/components/rooms-construction-overlay"
 import { useLanguage } from "@/contexts/language-context"
 import { getRooms, type Room } from "@/lib/rooms-data"
 
@@ -49,9 +50,9 @@ export default function HomePage() {
       case "ac":
         return room.amenities.ac
       case "budget":
-        return room.price <= 3000
+        return room.pricing.perNight.baseRate <= 3000
       case "luxury":
-        return room.price >= 6000
+        return room.pricing.perNight.baseRate >= 6000
       default:
         return true
     }
@@ -97,11 +98,12 @@ export default function HomePage() {
           </div>
         </div>
         {/* Decorative elements */}
-        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-warm-50 to-transparent"></div>
+        {/* <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-warm-50 to-transparent"></div> */}
       </section>
 
       {/* Rooms Section */}
-      <section id="rooms" className="py-8 md:py-16">
+      <section id="rooms" className="py-8 md:py-16 relative">
+        <RoomsConstructionOverlay />
         <div className="container mx-auto px-4">
           <div className="mb-8">
             <RoomFilters
