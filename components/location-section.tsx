@@ -124,11 +124,11 @@ export function LocationSection() {
                 <div className="space-y-3 text-sm">
                   <div className="flex items-start gap-2">
                     <MapPin className="h-4 w-4 text-warm-600 mt-0.5 flex-shrink-0" />
-                    <span className="text-sage-700">Rent rooms, Horana, Western Province, Sri Lanka</span>
+                    <span className="text-sage-700">No 40/2, Rathnapura Road, Munagama, Horana</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Phone className="h-4 w-4 text-ocean-600" />
-                    <span className="text-sage-700">+94 XX XXX XXXX</span>
+                    <span className="text-sage-700">+94 77 965 9092</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="h-4 w-4 text-sage-600" />

@@ -414,7 +414,7 @@ export default function PrivacyPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Button asChild size="sm" className="bg-amber-600 hover:bg-amber-700 text-white">
-                    <Link href="tel:+94XXXXXXXXX" className="flex items-center gap-2">
+                    <Link href="tel:+94 77 965 9092" className="flex items-center gap-2">
                       <Phone className="h-4 w-4" />
                       {t("language") === "si" ? "අමතන්න" : "Call Us"}
                     </Link>
