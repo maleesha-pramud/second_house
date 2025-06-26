@@ -454,7 +454,7 @@ export default function PrivacyPage() {
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+              <Button asChild variant="outline" size="lg" className="border-white text-warm-600 hover:bg-white/10 hover:!text-white">
                 <Link href="/">{t("language") === "si" ? "මුල් පිටුවට" : "Back to Home"}</Link>
               </Button>
             </div>
